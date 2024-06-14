@@ -9,7 +9,6 @@ RnD_L2B is a research project that investigates the use of Large Language Models
 
 * `logs/`: Contains training logs for various model configurations.
 
-* `models/`: Stores fine-tuned models and tokenizers.
 
 * `notebooks/`: Contains Jupyter notebooks for exploratory data analysis and experiments.
 
@@ -20,7 +19,9 @@ RnD_L2B is a research project that investigates the use of Large Language Models
   * `inference/`: Scripts for model inference.
   * `training/`: Scripts for training the models.
 
-requirements.txt: Lists required Python packages for the project.
+`requirements.txt`: Lists required Python packages for the project.
+
+NOTE: The trained models are not included in this Repository as this exceeds GitHub's file size limit
 
 ## Project Details
 The training for the different models can be found in the `src/training` directory. This includes scripts for training the two  T5 model (`train_t5_label_concat.py`/`train_y5_text_only.py`) and the BERT model (`train_bert.py`).

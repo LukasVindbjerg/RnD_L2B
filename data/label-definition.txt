@@ -1,0 +1,24 @@
+REVERSE (0):
+Meaning: The tasks should be executed in the reverse order from how they are mentioned in the text.
+Example: "Do the laundry, but first wash the car" -> DSL: "car.wash(), laundry_room.clean(laundry)"
+
+FIRST (1):
+Meaning: The tasks should be executed in the order they are mentioned in the text.
+Example: "Clean the kitchen, then empty the trash" -> DSL: "kitchen.clean(), trash.empty()"
+
+REPLACE (2):
+Meaning: The current task should be replaced with the new task mentioned.
+Example: "Clean the kitchen. No, do the laundry instead" -> DSL: "laundry_room.clean(laundry)"
+
+CLEAR (3):
+Meaning: The task should be cleared or canceled.
+Example: "Start the dishwasher. Nevermind" -> DSL: ""
+
+APPEND (4):
+Meaning: Additional tasks should be appended to the existing task list.
+Example: "Cook dinner, then set the table, and finally clean the dishes" -> DSL: "kitchen.cook(dinner), dining_room.set(table), kitchen.clean(dishes)"
+
+DSL (5):
+Meaning: The task is a direct translation into the domain-specific language (DSL).
+Example: "Clean the kitchen" -> DSL: "kitchen.clean()"
+
